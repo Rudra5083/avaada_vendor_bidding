@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaada</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <a href="listingproject.html"
+              ><img src="images/logo.png" alt="" height="51"
+            /></a>
+          </div>
+
+          <div class="col-md-5 ms-auto invites_log1">
+            <div class="invites"></div>
+
+            <div class="notification">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bell-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                  />
+                </svg>
+
+                <div class="circle">3</div>
+              </a>
+
+              <div class="dropdown">
+                <div class="notifications dropdown-menu">
+                  <div class="notifications_heading justify-content-between">
+                    Notifications
+
+                    <span>2 New</span>
+                  </div>
+
+                  <div class="notifications_inside">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          >New vendor details submitted: Vendor Code VND205</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 30 Min Ago
+                        </div>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          >Vendor details received: Vendor Code VND203, Name -
+                          MechCorp Engineering.</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 47 Min Ago
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user_box">
+              <img src="images/userkumar.png" alt="" />
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Rahul Verma
+              </a>
+
+              <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile </a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 left_menu">
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="RFQlistingbidding.html">Project</a></li>
+              <li><a href="#">Vendor</a></li>
+              <li><a href="Rfqlisting.html">RFQ</a></li>
+              <li><a href="#">Report</a></li>
+              <li><a href="Packagebuyerbidding.html">Packages</a></li>
+              <li><a href="#">Logout</a></li>
+              <!-- <li><a href="#">Accounts</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-md-10">
+            <div class="main_heading d-flex justify-content-between">
+              <div class="heading_vendor_name">
+                <h1>RFQ Participation Form</h1>
+              </div>
+
+              <div class="timer_rfq_validity">
+                <div class="timer-container">
+                  <div class="timer-label">Timer</div>
+                  <div class="timer-box">
+                    <div class="timer-number">12</div>
+                    <div class="timer-text">Day</div>
+                  </div>
+                  <div class="timer-box">
+                    <div class="timer-number">18</div>
+                    <div class="timer-text">Hours</div>
+                  </div>
+
+                  <div class="timer-box">
+                    <div class="timer-number">18</div>
+                    <div class="timer-text">Hours</div>
+                  </div>
+
+                  <div class="timer-box">
+                    <div class="timer-number">45</div>
+                    <div class="timer-text">Minutes</div>
+                  </div>
+
+                  <div class="timer-box">
+                    <div class="timer-number">20</div>
+                    <div class="timer-text">Seconds</div>
+                  </div>
+                </div>
+
+                <div class="date-picker-container">
+                  <form>
+                    <div class="date-range">
+                      <label class="rfq-label" for="rfqValidity"
+                        >RFQ Validity:</label
+                      >
+                      <div class="from">
+                        <label for="fromDate">From:</label>
+                        <input type="date" id="fromDate" name="fromDate" />
+                      </div>
+                      <div class="to">
+                        <label for="toDate">To:</label>
+                        <input type="date" id="toDate" name="toDate" />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="search_filter_outers ms-auto">
+              <div class="seclected_form_detail_first1">
+                <h5>BOQ</h5>
+                <h5>Purchase Type</h5>
+                <select
+                  class="form-select seclected_form_detail1"
+                  aria-label="Default select example"
+                  fdprocessedid="zlera"
+                >
+                  <option selected="">Supply</option>
+                  <option value="1">Supply</option>
+                  <option value="2">Supply</option>
+                </select>
+              </div>
+
+              <div class="create_listing_project">
+                <button
+                  class="vendor_btn vendor_maine_content1"
+                  data-toggle="modal"
+                  data-target="#tableModals"
+                  fdprocessedid="p0sy5s"
+                >
+                  Download
+                </button>
+                <a
+                  class="vendor_btn vendor_maine_content"
+                  href="Participationrfq.html  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-pen"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"
+                    />
+                  </svg>
+                  Edit
+                </a>
+              </div>
+            </div>
+            <div class="form-container">
+              <div
+                class="modal vendor_modal hidemodal"
+                id="editBOQModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="editBOQModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        fdprocessedid="f6w7xe"
+                        onclick="closeModalAndReload()"
+                      ></button>
+                    </div>
+                    <div class="modal-body trigger_listing">
+                      Are you sure you want to modify BOQ, this will trigger
+                      notification to Engineer once modified.
+
+                      <div class="clear_btn_status">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          No
+                        </button>
+                        <a
+                          href="Rfqbuyerbidding.html"
+                          type="button"
+                          class="btn btn-success"
+                        >
+                          Yes
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="listing_main listing-block-table"
+              style="overflow-x: scroll"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th class="vendor_tabels">
+                      Item No <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Description<img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      HSN/SAC Code
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Units <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Qty
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Rate in Puess<img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Amount (In INR)
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Remarks <img src="images/code.png" alt="" />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="maine_tr_vendor">
+                    <td>1</td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <div class="creation_rfq_blocklisting">
+                        <input
+                          class="form-control mainform"
+                          type="text"
+                          placeholder="GHJK123"
+                          aria-label="Disabled input example"
+                          disabled
+                        />
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="Ltr"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="1"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 20,0000"
+                        aria-label="Disabled input example"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 20,0000"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td class="detail_block_1">
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder=""
+                      />
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        ></path>
+                      </svg>
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td>2</td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <div class="creation_rfq_blocklisting">
+                        <input
+                          class="form-control mainform"
+                          type="text"
+                          placeholder="GHJK123"
+                          aria-label="Disabled input example"
+                          disabled
+                        />
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="Kgs"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="2"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 15,0000"
+                        aria-label="Disabled input example"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 15,0000"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td class="detail_block_1">
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder=""
+                      />
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        ></path>
+                      </svg>
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td>3</td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <div class="creation_rfq_blocklisting">
+                        <input
+                          class="form-control mainform"
+                          type="text"
+                          placeholder="GHJK123"
+                          aria-label="Disabled input example"
+                          disabled
+                        />
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="Kgs"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="4"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 25,0000"
+                        aria-label="Disabled input example"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 25,0000"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td class="detail_block_1">
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder=""
+                      />
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        ></path>
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td>4</td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <div class="creation_rfq_blocklisting">
+                        <input
+                          class="form-control mainform"
+                          type="text"
+                          placeholder="GHJK123"
+                          aria-label="Disabled input example"
+                          disabled
+                        />
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="Number"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="1"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 30,0000"
+                        aria-label="Disabled input example"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 30,0000"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td class="detail_block_1">
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder=""
+                      />
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        ></path>
+                      </svg>
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td>5</td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <div class="creation_rfq_blocklisting">
+                        <input
+                          class="form-control mainform"
+                          type="text"
+                          placeholder="GHJK123"
+                          aria-label="Disabled input example"
+                          disabled
+                        />
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="Ltr"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="2"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 10,0000"
+                        aria-label="Disabled input example"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 10,0000"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td class="detail_block_1">
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder=""
+                      />
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        ></path>
+                      </svg>
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td>6</td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <div class="creation_rfq_blocklisting">
+                        <input
+                          class="form-control mainform"
+                          type="text"
+                          placeholder="GHJK123"
+                          aria-label="Disabled input example"
+                          disabled
+                        />
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="Kgs"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="5"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 40,0000"
+                        aria-label="Disabled input example"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 40,0000"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td class="detail_block_1">
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder=""
+                      />
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        ></path>
+                      </svg>
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td>7</td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <div class="creation_rfq_blocklisting">
+                        <input
+                          class="form-control mainform"
+                          type="text"
+                          placeholder="GHJK123"
+                          aria-label="Disabled input example"
+                          disabled
+                        />
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="Ltr"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="3"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 22,0000"
+                        aria-label="Disabled input example"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder="₹ 22,0000"
+                        aria-label="Disabled input example"
+                        disabled
+                      />
+                    </td>
+                    <td class="detail_block_1">
+                      <input
+                        class="form-control mainform"
+                        type="text"
+                        placeholder=""
+                      />
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        ></path>
+                      </svg>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="create_listing_project1">
+              <a
+                class="vendor_btn vendor_maine_content1"
+                data-toggle="modal"
+                data-target="#contactModal"
+              >
+                + Add Row
+              </a>
+            </div>
+            <div class="listing_block_maine_allbtn">
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">BOM</p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      class="vendor_btn vendor_maine_content1"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cloud-arrow-up-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                        ></path>
+                      </svg>
+                      Upload File
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cloud-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      =
+                      <path
+                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
+                      ></path>
+                    </svg>
+                    <p style="margin-top: 10px">Download</p>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">Tendor Drawing</p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      class="vendor_btn vendor_maine_content1"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cloud-arrow-up-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                        ></path>
+                      </svg>
+                      Upload File
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cloud-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      =
+                      <path
+                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
+                      ></path>
+                    </svg>
+                    <p style="margin-top: 10px">Download</p>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">Technical Specification</p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      class="vendor_btn vendor_maine_content1"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cloud-arrow-up-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                        ></path>
+                      </svg>
+                      Upload File
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cloud-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      =
+                      <path
+                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
+                      ></path>
+                    </svg>
+                    <p style="margin-top: 10px">Download</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-bx">
+                <h2>Document Uploaded 20% of 100%</h2>
+
+                <div class="progress-bar">
+                  <div class="progress-bar-inner"></div>
+                </div>
+                <div class="twenty-br">20%</div>
+                <div class="hundred-br">100%</div>
+              </div>
+            </div>
+            <hr />
+            <div class="listing_block_maine_allbtn">
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">
+                  Term Sheet
+                  <span class="error1">*</span>
+                </p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      href="#"
+                      class="vendor_btn vendor_maine_content1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-pdf"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        />
+                        <path
+                          d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                        />
+                      </svg>
+                      File Pdf
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">
+                  Vendor Information
+                  <span class="error1">*</span>
+                </p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      href="#"
+                      class="vendor_btn vendor_maine_content1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#rfqModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-pdf"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        />
+                        <path
+                          d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                        />
+                      </svg>
+                      File Pdf
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">
+                  List of Construction Materials
+                  <span class="error1">*</span>
+                </p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      href="#"
+                      class="vendor_btn vendor_maine_content1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#listModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-pdf"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        />
+                        <path
+                          d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                        />
+                      </svg>
+                      File Pdf
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">
+                  General Conditions of Contract (Supply)
+                </p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      href="#"
+                      class="vendor_btn vendor_maine_content1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#generalModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-pdf"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        />
+                        <path
+                          d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                        />
+                      </svg>
+                      File Pdf
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-x-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        style="color: red"
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">ABAC Policy</p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      href="#"
+                      class="vendor_btn vendor_maine_content1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#abacModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-pdf"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        />
+                        <path
+                          d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                        />
+                      </svg>
+                      File Pdf
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-x-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        style="color: red"
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_blocks">
+                  Avaada Quality Requirement (Supply)
+                </p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      href="#"
+                      class="vendor_btn vendor_maine_content1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#avaadaModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-pdf"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        />
+                        <path
+                          d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                        />
+                      </svg>
+                      File Pdf
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-x-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        style="color: red"
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="closebtn_submit_block_btn">
+              <button type="button" class="btn clear_btn">Close</button>
+              <button
+                type="button"
+                class="btn btn-success save_next_btn"
+                data-bs-toggle="modal"
+                data-bs-target="#congratsModal"
+              >
+                Submit
+              </button>
+            </div>
+
+            <!-- Congratulation Submit Modal -->
+            <div
+              class="modal fade"
+              id="congratsModal"
+              tabindex="-1"
+              aria-labelledby="congratsModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      fdprocessedid="rw9p"
+                      onclick="reloadPage()"
+                    ></button>
+                  </div>
+                  <div class="modal-body lets_block_sucess">
+                    <img src="images/check-circle.png" alt="" />
+                    <p>Quotation submitted successfully</p>
+                    <a
+                      href="RFQlistingbidding.html"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      Done
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagination_outer">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="maine_dropdown">
+              <p>Items per page:</p>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5">6</option>
+                <option value="5">7</option>
+                <option value="5">8</option>
+                <option value="5">9</option>
+                <option value="5">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="modal success_modal hidemodal"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+              fdprocessedid="f6w7xe"
+              onclick="closeModalAndReload()"
+            ></button>
+          </div>
+          <div class="modal-body trigger_listing">
+            <img src="images/check-circle.png" alt="" />
+
+            <p>BOQ updated successfully</p>
+            <button type="button" class="btn btn-success">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avaada Quality Requirement Modal -->
+
+    <div
+      class="modal fade"
+      id="avaadaModal"
+      tabindex="-1"
+      aria-labelledby="avaadaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content listing_block_welcome">
+          <div class="modal-header">
+            <h5 class="modal-title" id="avaadaModalLabel">
+              Avaada Quality Requirement Acknowledgment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body block_listing_rfq">
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <ul>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>There are many variations of passages of Lorem available,</li>
+              <li>There are many variations of passages of Lorem</li>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>
+                Randomised words which don't look even slightly believable
+              </li>
+            </ul>
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <div class="Participate_block">
+              <input type="checkbox" checked />
+              <h5>Terms & Conditions</h5>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Discard
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              I Accept
+            </button>
+            <!-- Add additional buttons or actions if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avaada Quality Requirement Modal -->
+    <!-- ABAC Policy Modal -->
+    <div
+      class="modal fade"
+      id="abacModal"
+      tabindex="-1"
+      aria-labelledby="abacModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content listing_block_welcome">
+          <div class="modal-header">
+            <h5 class="modal-title" id="abacModalLabel">
+              ABAC Policy Acknowledgment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body block_listing_rfq">
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <ul>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>There are many variations of passages of Lorem available,</li>
+              <li>There are many variations of passages of Lorem</li>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>
+                Randomised words which don't look even slightly believable
+              </li>
+            </ul>
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <div class="Participate_block">
+              <input type="checkbox" checked />
+              <h5>Terms & Conditions</h5>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Discard
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              I Accept
+            </button>
+            <!-- Add additional buttons or actions if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABAC Policy Modal -->
+
+    <!-- General Conditions of Contract (Supply) Modal -->
+    <div
+      class="modal fade"
+      id="generalModal"
+      tabindex="-1"
+      aria-labelledby="generalModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content listing_block_welcome">
+          <div class="modal-header">
+            <h5 class="modal-title" id="generalModalLabel">
+              General Conditions of Contract Acknowledgment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body block_listing_rfq">
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <ul>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>There are many variations of passages of Lorem available,</li>
+              <li>There are many variations of passages of Lorem</li>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>
+                Randomised words which don't look even slightly believable
+              </li>
+            </ul>
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <div class="Participate_block">
+              <input type="checkbox" checked />
+              <h5>Terms & Conditions</h5>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Discard
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              I Accept
+            </button>
+            <!-- Add additional buttons or actions if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- General Conditions of Contract (Supply) Modal -->
+
+    <!-- List of Construction Materials Modal -->
+    <div
+      class="modal fade"
+      id="listModal"
+      tabindex="-1"
+      aria-labelledby="listModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content listing_block_welcome">
+          <div class="modal-header">
+            <h5 class="modal-title" id="listModalLabel">
+              List of Construction Materials Acknowledgment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body block_listing_rfq">
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <ul>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>There are many variations of passages of Lorem available,</li>
+              <li>There are many variations of passages of Lorem</li>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>
+                Randomised words which don't look even slightly believable
+              </li>
+            </ul>
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <div class="Participate_block">
+              <input type="checkbox" checked />
+              <h5>Terms & Conditions</h5>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Discard
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              I Accept
+            </button>
+            <!-- Add additional buttons or actions if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- List of Construction Materials Modal -->
+
+    <!--Vendor Information Modal -->
+    <div
+      class="modal fade"
+      id="rfqModal"
+      tabindex="-1"
+      aria-labelledby="rfqModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content listing_block_welcome">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rfqModalLabel">
+              Vendor Information Acknowledgment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body block_listing_rfq">
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <ul>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>There are many variations of passages of Lorem available,</li>
+              <li>There are many variations of passages of Lorem</li>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>
+                Randomised words which don't look even slightly believable
+              </li>
+            </ul>
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <div class="Participate_block">
+              <input type="checkbox" checked />
+              <h5>Terms & Conditions</h5>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Discard
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              I Accept
+            </button>
+            <!-- Add additional buttons or actions if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Vendor Information Modal -->
+    <!-- Pdf Modal -->
+    <div
+      class="modal fade"
+      id="pdfModal"
+      tabindex="-1"
+      aria-labelledby="pdfModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content listing_block_welcome">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pdfModalLabel">
+              Term Sheet Acknowledgment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body block_listing_rfq">
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <ul>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>There are many variations of passages of Lorem available,</li>
+              <li>There are many variations of passages of Lorem</li>
+              <li>
+                There are many variations of passages of Lorem Ipsum available,
+              </li>
+              <li>
+                Randomised words which don't look even slightly believable
+              </li>
+            </ul>
+            <h5 style="margin-bottom: 10px">Heading One</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <div class="Participate_block">
+              <input type="checkbox" checked />
+              <h5>Terms & Conditions</h5>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Discard
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              I Accept
+            </button>
+            <!-- Add additional buttons or actions if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pdf Modal -->
+    <!-- Download Modal -->
+
+    <div
+      class="modal fade"
+      id="tableModals"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="tableModalsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tableModalsLabel">
+              Supportive Documents!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+              fdprocessedid="rw9p"
+              onclick="reloadPage()"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Table Content -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="block_listing_bidding">S.No.</th>
+                  <th class="block_listing_bidding">Document Name</th>
+                  <th class="block_listing_bidding">Download</th>
+
+                  <!-- Add more columns if needed -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Document One</td>
+                  <td style="color: blue">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Document two</td>
+                  <td style="color: blue">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Document three</td>
+                  <td style="color: blue">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Document four</td>
+                  <td style="color: blue">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Submit</button>
+            <!-- Add additional buttons or actions here if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download Modal -->
+    <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function reloadPage() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
