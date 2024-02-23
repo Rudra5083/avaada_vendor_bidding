@@ -62,7 +62,11 @@
                 </div>
                 <div class="mb-4 position-relative">
                   <label class="mb-1 text-dark">Password</label>
-                  <input type="password" class="form-control form-h" />
+                  <input
+                    type="password"
+                    class="form-control form-h"
+                    id="passwordInput"
+                  />
 
                   <span class="lock"
                     ><svg
@@ -78,7 +82,7 @@
                       /></svg
                   ></span>
 
-                  <span class="show-pass eye">
+                  <span class="show-pass eye" id="showPassword">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -142,5 +146,22 @@
 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#showPassword").click(function () {
+          var passwordInput = $("#passwordInput");
+          var eyeIcon = $("#showPassword svg");
+
+          // Toggle the password input type
+          if (passwordInput.attr("type") === "password") {
+            passwordInput.attr("type", "text");
+            eyeIcon.removeClass("bi-eye-slash").addClass("bi-eye");
+          } else {
+            passwordInput.attr("type", "password");
+            eyeIcon.removeClass("bi-eye").addClass("bi-eye-slash");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

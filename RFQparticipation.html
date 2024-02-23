@@ -85,7 +85,7 @@
             </div>
 
             <div class="user_box">
-              <img src="images/userkumar.png" alt="" />
+              <img src="images/profile_pic.png" alt="" />
               <a
                 class="dropdown-toggle"
                 href="#"
@@ -98,7 +98,9 @@
 
               <div class="dropdown">
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile </a></li>
+                  <li>
+                    <a class="dropdown-item" href="account.html">Profile </a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Settings</a></li>
                   <li><a class="dropdown-item" href="index.html">Logout</a></li>
                 </ul>
@@ -126,7 +128,14 @@
           </div>
 
           <div class="col-md-10">
-            <div class="main_heading d-flex justify-content-between">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+              class="main_heading"
+            >
               <div class="heading_vendor_name">
                 <h1>RFQ Participation Form</h1>
               </div>
@@ -142,12 +151,6 @@
                     <div class="timer-number">18</div>
                     <div class="timer-text">Hours</div>
                   </div>
-
-                  <div class="timer-box">
-                    <div class="timer-number">18</div>
-                    <div class="timer-text">Hours</div>
-                  </div>
-
                   <div class="timer-box">
                     <div class="timer-number">45</div>
                     <div class="timer-text">Minutes</div>
@@ -167,11 +170,18 @@
                       >
                       <div class="from">
                         <label for="fromDate">From:</label>
-                        <input type="date" id="fromDate" name="fromDate" />
+
+                        <div class="rfq_validity_block_listing">
+                          <div class="rfq_validity_block_listings">
+                            <img src="images/Calendar_rfq.png" alt="" />
+                            <p>12/02/23</p>
+                            <img src="images/Calendar_rfq.png" alt="" />
+                            <p>14/02/23</p>
+                          </div>
+                        </div>
                       </div>
                       <div class="to">
                         <label for="toDate">To:</label>
-                        <input type="date" id="toDate" name="toDate" />
                       </div>
                     </div>
                   </form>
@@ -182,6 +192,39 @@
             <div class="search_filter_outers ms-auto">
               <div class="seclected_form_detail_first1">
                 <h5>BOQ</h5>
+                <div class="search_main">
+                  <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                      <input
+                        type="text"
+                        class="form-control input-lg"
+                        placeholder="Search here"
+                        fdprocessedid="lycspp"
+                      />
+                      <span class="input-group-btn">
+                        <button
+                          class="btn btn-info btn-lg"
+                          type="button"
+                          fdprocessedid="8kpaxq"
+                        >
+                          <span class="glyphicon glyphicon-search"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-search"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                              ></path></svg
+                          ></span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
                 <h5>Purchase Type</h5>
                 <select
                   class="form-select seclected_form_detail1"
@@ -189,8 +232,7 @@
                   fdprocessedid="zlera"
                 >
                   <option selected="">Supply</option>
-                  <option value="1">Supply</option>
-                  <option value="2">Supply</option>
+                  <option value="1">Services</option>
                 </select>
               </div>
 
@@ -278,7 +320,7 @@
                 <thead>
                   <tr>
                     <th class="vendor_tabels">
-                      Item No <img src="images/code.png" alt="" />
+                      S.N.O <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
                       Description<img src="images/code.png" alt="" />
@@ -295,7 +337,7 @@
                       <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Rate in Puess<img src="images/code.png" alt="" />
+                      Rate in Ruess<img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
                       Amount (In INR)
@@ -327,19 +369,9 @@
                           aria-label="Disabled input example"
                           disabled
                         />
-
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-pencil"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                          ></path>
-                        </svg>
+                        <a class="edit_icon_listing" id="editButton">
+                          <img src="images/Edit_icon.png" alt="Edit Icon" />
+                        </a>
                       </div>
                     </td>
                     <td>
@@ -383,20 +415,6 @@
                         type="text"
                         placeholder=""
                       />
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        ></path>
-                      </svg>
                     </td>
                   </tr>
 
@@ -420,19 +438,7 @@
                           aria-label="Disabled input example"
                           disabled
                         />
-
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-pencil"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                          ></path>
-                        </svg>
+                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -476,20 +482,6 @@
                         type="text"
                         placeholder=""
                       />
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        ></path>
-                      </svg>
                     </td>
                   </tr>
 
@@ -514,18 +506,7 @@
                           disabled
                         />
 
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-pencil"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                          ></path>
-                        </svg>
+                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -569,20 +550,6 @@
                         type="text"
                         placeholder=""
                       />
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        ></path>
-                      </svg>
                     </td>
                   </tr>
                   <tr class="maine_tr_vendor">
@@ -606,18 +573,7 @@
                           disabled
                         />
 
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-pencil"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                          ></path>
-                        </svg>
+                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -661,20 +617,6 @@
                         type="text"
                         placeholder=""
                       />
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        ></path>
-                      </svg>
                     </td>
                   </tr>
 
@@ -699,18 +641,7 @@
                           disabled
                         />
 
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-pencil"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                          ></path>
-                        </svg>
+                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -754,20 +685,6 @@
                         type="text"
                         placeholder=""
                       />
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        ></path>
-                      </svg>
                     </td>
                   </tr>
 
@@ -792,18 +709,7 @@
                           disabled
                         />
 
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-pencil"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                          ></path>
-                        </svg>
+                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -847,20 +753,6 @@
                         type="text"
                         placeholder=""
                       />
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        ></path>
-                      </svg>
                     </td>
                   </tr>
 
@@ -884,19 +776,7 @@
                           aria-label="Disabled input example"
                           disabled
                         />
-
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-pencil"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                          ></path>
-                        </svg>
+                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -940,35 +820,57 @@
                         type="text"
                         placeholder=""
                       />
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        ></path>
-                      </svg>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <!-- Edit Icon Modal  -->
+            <div
+              class="modal fade"
+              id="editModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="editModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      fdprocessedid="rw9p"
+                      onclick="reloadPage()"
+                    ></button>
+                  </div>
+                  <div class="modal-body lets_block_sucess">
+                    <p>
+                      Do you want to change the HSN/SAC Code?<br />
+                      Click yes to continue
+                    </p>
 
-            <div class="create_listing_project1">
-              <a
-                class="vendor_btn vendor_maine_content1"
-                data-toggle="modal"
-                data-target="#contactModal"
-              >
-                + Add Row
-              </a>
+                    <a
+                      href="RFQeditparticipation.html"
+                      type="button"
+                      class="btn btn-success"
+                      >Yes</a
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      onclick="closeApproveModal()"
+                      fdprocessedid="t39hmd"
+                    >
+                      No
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- Edit Icon Modal  -->
             <div class="listing_block_maine_allbtn">
               <div style="margin-top: 10px">
                 <p class="maine_btn_bom_blocks">BOM</p>
@@ -1107,7 +1009,7 @@
               </div>
             </div>
             <hr />
-            <div class="listing_block_maine_allbtn">
+            <div class="listing_block_maine_btns">
               <div style="margin-top: 10px">
                 <p class="maine_btn_bom_blocks">
                   Term Sheet
@@ -1349,55 +1251,15 @@
             </div>
             <hr />
             <div class="closebtn_submit_block_btn">
-              <button type="button" class="btn clear_btn">Close</button>
+              <button type="button" class="btn clear_btns">Close</button>
               <button
                 type="button"
-                class="btn btn-success save_next_btn"
+                class="btn btn-success save_next_btns"
                 data-toggle="modal"
                 data-target="#submissionModal"
               >
                 Submit
               </button>
-            </div>
-
-            <div class="pagination_outer">
-              <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">«</span>
-                      <span class="sr-only"></span>
-                    </a>
-                  </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">»</span>
-                      <span class="sr-only"></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="maine_dropdown">
-              <p>Items per page:</p>
-              <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="5">6</option>
-                <option value="5">7</option>
-                <option value="5">8</option>
-                <option value="5">9</option>
-                <option value="5">10</option>
-              </select>
             </div>
           </div>
         </div>
@@ -2134,6 +1996,29 @@
     <script>
       function reloadPage() {
         location.reload();
+      }
+    </script>
+    <script>
+      // Open the Edit modal when the Edit button is clicked
+      document
+        .getElementById("editButton")
+        .addEventListener("click", function () {
+          $("#editModal").modal("show");
+        });
+
+      // Function to handle saving edits
+      function saveEdit() {
+        // You can add your logic to handle saving edits here
+        // For example, you can retrieve the edited values from the form fields
+        var editedVendorName = document.getElementById("vendorName").value;
+        var editedVendorDescription =
+          document.getElementById("vendorDescription").value;
+
+        console.log("Edited Vendor Name:", editedVendorName);
+        console.log("Edited Vendor Description:", editedVendorDescription);
+
+        // Close the Edit modal after saving edits
+        $("#editModal").modal("hide");
       }
     </script>
   </body>

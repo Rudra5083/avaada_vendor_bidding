@@ -379,11 +379,7 @@
                           type="text"
                           placeholder="GHJK123"
                           aria-label="Disabled input example"
-                          disabled
                         />
-                        <a class="edit_icon_listing" id="editButton">
-                          <img src="images/Edit_icon.png" alt="Edit Icon" />
-                        </a>
                       </div>
                     </td>
                     <td>
@@ -466,9 +462,7 @@
                           type="text"
                           placeholder="GHJK123"
                           aria-label="Disabled input example"
-                          disabled
                         />
-                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -551,9 +545,7 @@
                           type="text"
                           placeholder="GHJK123"
                           aria-label="Disabled input example"
-                          disabled
                         />
-                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -635,9 +627,7 @@
                           type="text"
                           placeholder="GHJK123"
                           aria-label="Disabled input example"
-                          disabled
                         />
-                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -720,9 +710,7 @@
                           type="text"
                           placeholder="GHJK123"
                           aria-label="Disabled input example"
-                          disabled
                         />
-                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -804,9 +792,7 @@
                           type="text"
                           placeholder="GHJK123"
                           aria-label="Disabled input example"
-                          disabled
                         />
-                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -889,9 +875,7 @@
                           type="text"
                           placeholder="GHJK123"
                           aria-label="Disabled input example"
-                          disabled
                         />
-                        <img src="images/Edit_icon.png" alt="" />
                       </div>
                     </td>
                     <td>
@@ -979,52 +963,7 @@
                 </tbody>
               </table>
             </div>
-            <!-- Edit Icon Modal  -->
-            <div
-              class="modal fade"
-              id="editModal"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="editModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                      fdprocessedid="rw9p"
-                      onclick="reloadPage()"
-                    ></button>
-                  </div>
-                  <div class="modal-body lets_block_sucess">
-                    <p>
-                      Do you want to change the HSN/SAC Code?<br />
-                      Click yes to continue
-                    </p>
 
-                    <a
-                      href="Formeditpagerfq.html"
-                      type="button"
-                      class="btn btn-success"
-                      >Yes</a
-                    >
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      onclick="closeApproveModal()"
-                      fdprocessedid="t39hmd"
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Edit Icon Modal  -->
             <div class="listing_block_maine_allbtn">
               <div style="margin-top: 10px">
                 <p class="maine_btn_bom_blocks">BOM</p>
@@ -2179,29 +2118,6 @@
     <script>
       function reloadPage() {
         location.reload();
-      }
-    </script>
-    <script>
-      // Open the Edit modal when the Edit button is clicked
-      document
-        .getElementById("editButton")
-        .addEventListener("click", function () {
-          $("#editModal").modal("show");
-        });
-
-      // Function to handle saving edits
-      function saveEdit() {
-        // You can add your logic to handle saving edits here
-        // For example, you can retrieve the edited values from the form fields
-        var editedVendorName = document.getElementById("vendorName").value;
-        var editedVendorDescription =
-          document.getElementById("vendorDescription").value;
-
-        console.log("Edited Vendor Name:", editedVendorName);
-        console.log("Edited Vendor Description:", editedVendorDescription);
-
-        // Close the Edit modal after saving edits
-        $("#editModal").modal("hide");
       }
     </script>
   </body>
